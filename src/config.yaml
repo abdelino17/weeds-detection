@@ -1,5 +1,7 @@
 title: 'Weeds detection'
-description: Classify crops and weeds
+
+description: Let's try to classify crops and weeds
+
 about: This is a weeds detection classifier implemented with Fastai library.
 
   The project was build by [Abdel-Aziz BINGUITCHA-FARE](https://github.com/abdelino17).
