@@ -159,7 +159,7 @@ class MainPage extends React.Component {
       <div>
         <h1>{APP_CONFIG.description}</h1>
         <p>
-          You can easily download an image from the given URLs or uplad a new
+          You can easily download an image from the given URLs or upload a new
           file.
         </p>
 
