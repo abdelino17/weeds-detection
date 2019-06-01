@@ -128,7 +128,14 @@ class MainPage extends React.Component {
     if (predictions.length > 0) {
       const predictionItems = predictions.map(item => (
         <li>
-          {item.class} ({item.prob * 100}%){' '}
+          {item.class} ({item.prob * 100}%) &nbsp; &nbsp;{' '}
+          <h3>
+            <span class="badge badge-danger">Success</span>
+          </h3>
+          &nbsp; &nbsp;
+          <h3>
+            <span class="badge badge-success">Success</span>
+          </h3>
         </li>
       ));
 
