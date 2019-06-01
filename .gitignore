@@ -1,7 +1,6 @@
 data/*
 !data/.gitkeep 
-models/
-!models/classes.txt
+models/export.pkl
 !models/final.pth
 !models/model.pkl
 .idea
