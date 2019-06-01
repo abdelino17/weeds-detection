@@ -39,6 +39,7 @@ def predict(img, n: int = 3) -> Dict[str, Union[str, List]]:
     pred_probs = pred_probs.tolist()
     predictions = []
     for image_class, output, prob in zip(model.data.classes, outputs.tolist(), pred_probs):
+        print("Output:", output, "---- prob:", prob, "--image class:", image_class)
         output = round(output, 1)
         prob = round(prob, 2)
         predictions.append(

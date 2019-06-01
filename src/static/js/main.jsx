@@ -151,7 +151,6 @@ class MainPage extends React.Component {
     return (
       <div>
         <h1>{APP_CONFIG.description}</h1>
-
         <p>
           You can easily download an image from the given URLs or uplad a new
           file.
