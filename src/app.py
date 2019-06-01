@@ -41,13 +41,15 @@ def predict(img, n: int = 3) -> Dict[str, Union[str, List]]:
     for image_class, output, prob in zip(model.data.classes, outputs.tolist(), pred_probs):
         print("Output:", output, "---- prob:", prob, "--image class:", image_class)
         output = round(output, 1)
-        prob = round(prob, 4)
+        prob = round(prob, 2)
         if image_class in ["Common Wheat", "Maize", "Sugar beet"]:
             image_type = "Crop"
+            image_badge = "badge-success"
         else:
             image_type = "Weed"
+            image_badge = "badge-warning"
         predictions.append(
-            {"class": image_class.replace("_", " "), "output": output, "prob": prob, "type": image_type}
+            {"class": image_class.replace("_", " "), "output": output, "prob": prob, "type": image_type, "badge": image_badge}
         )
 
     predictions = sorted(predictions, key=lambda x: x["output"], reverse=True)
