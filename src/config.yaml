@@ -1,12 +1,12 @@
-title: "Weeds detection"
+title: 'Weeds detection'
 description: Classify crops and weeds
 about: This is a weeds detection classifier implemented with Fastai library.
 
   The project was build by [Abdel-Aziz BINGUITCHA-FARE](https://github.com/abdelino17).
 
-  # [Blog](https:///)
+  More info and the source code can be found below.
 
-  [Web app](https://food-img-classifier.herokuapp.com)
+  [Web app](https://weeds-detection.herokuapp.com)
 
 code: https://github.com/abdelino17/weeds-detection
 
