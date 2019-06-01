@@ -17,4 +17,5 @@ The following were used for model **training** (see [requirements.txt](requireme
 The following were used for model **deployment**:
 
 - Heroku
+- Docker
 - Flask: version 1.0
