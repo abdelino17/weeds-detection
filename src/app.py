@@ -42,8 +42,12 @@ def predict(img, n: int = 3) -> Dict[str, Union[str, List]]:
         print("Output:", output, "---- prob:", prob, "--image class:", image_class)
         output = round(output, 1)
         prob = round(prob, 4)
+        if image_class is in ["Common Wheat", "Maize", "Sugar beet"]:
+            image_type = "Crop"
+        else:
+            image_type = "Weed"
         predictions.append(
-            {"class": image_class.replace("_", " "), "output": output, "prob": prob}
+            {"class": image_class.replace("_", " "), "output": output, "prob": prob, "type": image_type}
         )
 
     predictions = sorted(predictions, key=lambda x: x["output"], reverse=True)
