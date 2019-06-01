@@ -13,13 +13,12 @@ import torch
 import json
 
 with open("src/config.yaml", 'r') as stream:
-    APP_CONFIG = yaml.load(stream)
+    APP_CONFIG = yaml.load(stream, Loader=yaml.FullLoader)
 
 app = Flask(__name__)
 
-
-def load_model(path=".", model_name="model.pkl"):
-    learn = load_learner(path, fname=model_name)
+def load_model(path=".", model_name="export.pkl"):
+    learn = load_learner(path)
     return learn
 
 
@@ -71,23 +70,20 @@ def classes():
 
 @app.route('/ping', methods=['GET'])
 def ping():
-    return "pong"
+    return "ping"
 
 
 @app.route('/config')
 def config():
     return flask.jsonify(APP_CONFIG)
 
-
 @app.after_request
 def add_header(response):
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate, public, max-age=0"
     response.headers["Expires"] = 0
     response.headers["Pragma"] = "no-cache"
-
     response.cache_control.max_age = 0
     return response
-
 
 @app.route('/<path:path>')
 def static_file(path):

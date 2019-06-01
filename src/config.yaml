@@ -1,4 +1,4 @@
-title: Weeds detection
+title: "Weeds detection"
 description: Classify crops and weeds
 about: This is a weeds detection classifier implemented with Fastai library.
 
