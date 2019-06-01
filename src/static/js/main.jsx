@@ -126,12 +126,12 @@ class MainPage extends React.Component {
     const predictions = this.state.predictions || [];
 
     if (predictions.length > 0) {
-      const predictionItems = predictions.map((item, ind) => {
+      const predictionItems = predictions.map(item => (
         <li>
           {item.class} ({item.prob * 100}%) &nbsp; &nbsp;
           <span class="badge badge-success">{item.type}</span>
-        </li>;
-      });
+        </li>
+      ));
 
       return <ul>{predictionItems}</ul>;
     } else {
