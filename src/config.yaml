@@ -4,20 +4,18 @@ about: This is a weeds detection classifier implemented with Fastai library.
 
   The project was build by [Abdel-Aziz BINGUITCHA-FARE](https://github.com/abdelino17).
 
-# [Blog](https:///)
+  # [Blog](https:///)
 
   [Web app](https://food-img-classifier.herokuapp.com)
 
-code: https://github.com/npatta01/web-deep-learning-classifier
+code: https://github.com/abdelino17/weeds-detection
 
 sampleImages:
-  - name: lasagne
-    url: https://upload.wikimedia.org/wikipedia/commons/b/ba/Lasagne_-_stonesoup.jpg
-  - name: sushi
-    url: https://upload.wikimedia.org/wikipedia/commons/6/60/Sushi_platter.jpg
-  - name: waffles
-    url: https://upload.wikimedia.org/wikipedia/commons/5/5b/Waffles_with_Strawberries.jpg
-  - name: eggplant (not in training data)
-    url: https://upload.wikimedia.org/wikipedia/commons/thumb/7/76/Solanum_melongena_24_08_2012_%281%29.JPG/1280px-Solanum_melongena_24_08_2012_%281%29.JPG
-  - name: table (not in training & not a food)
-    url: https://image.shutterstock.com/image-photo/brown-light-wooden-round-dining-260nw-588358070.jpg
+  - name: Black-grass (Weed)
+    url: https://commons.wikimedia.org/wiki/File:Black-grass.png
+  - name: Fat Hen (Weed)
+    url: https://commons.wikimedia.org/wiki/File:Fat-hen.png
+  - name: Maize (Crop)
+    url: https://commons.wikimedia.org/wiki/File:Maize.png
+  - name: Sugar Beet (Crop)
+    url: https://commons.wikimedia.org/wiki/File:Sugar-beet.png
