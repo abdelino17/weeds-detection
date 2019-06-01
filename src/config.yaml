@@ -14,10 +14,10 @@ code: https://github.com/abdelino17/weeds-detection
 
 sampleImages:
   - name: Black-grass (Weed)
-    url: https://commons.wikimedia.org/wiki/File:Black-grass.png
+    url: https://upload.wikimedia.org/wikipedia/commons/f/f7/Black-grass.png
   - name: Fat Hen (Weed)
-    url: https://commons.wikimedia.org/wiki/File:Fat-hen.png
+    url: https://upload.wikimedia.org/wikipedia/commons/a/a8/Fat-hen.png
   - name: Maize (Crop)
-    url: https://commons.wikimedia.org/wiki/File:Maize.png
+    url: https://upload.wikimedia.org/wikipedia/commons/3/33/Maize.png
   - name: Sugar Beet (Crop)
-    url: https://commons.wikimedia.org/wiki/File:Sugar-beet.png
+    url: https://upload.wikimedia.org/wikipedia/commons/c/c7/Sugar-beet.png
