@@ -47,7 +47,7 @@ def predict(img, n: int = 3) -> Dict[str, Union[str, List]]:
             image_badge = "badge-success"
         else:
             image_type = "Weed"
-            image_badge = "badge-warning"
+            image_badge = "badge-danger"
         predictions.append(
             {"class": image_class.replace("_", " "), "output": output, "prob": prob, "type": image_type, "badge": image_badge}
         )
